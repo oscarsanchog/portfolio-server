@@ -6,7 +6,7 @@ const createProject = async (
   image,
   link,
   repository,
-  technologiesId
+  technologiesName
 ) => {
   const [newProject] = await Project.findOrCreate({
     where: {
@@ -17,7 +17,7 @@ const createProject = async (
       repository
     }
   })
-  await newProject.addTechnologies(technologiesId)
+  await newProject.addTechnologies(technologiesName)
   return newProject
 }
 

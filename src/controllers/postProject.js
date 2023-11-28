@@ -6,19 +6,19 @@ const postProject = async (
   image, 
   link, 
   repository, 
-  technologyId
+  technologiesName
 ) => {
   if (
     !name || 
     !description || 
     !link ||
     !image ||
-    !technologyId
+    !technologiesName
   ) throw Error('Data is missing')
 
   // const formattedName = name.charAt(0).toUppercase()
 
-  const newDriver = createProject(name, description, image, link, repository, technologyId)
+  const newDriver = createProject(name, description, image, link, repository, technologiesName)
 
   return newDriver
 }
