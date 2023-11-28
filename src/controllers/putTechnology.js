@@ -1,9 +1,9 @@
 const updateTechnology = require('../services/DBdata/update/updateTechnology')
 
-const putTechnology = async (id, name, image) => {
-  if (!id || !name || !image) throw Error('Data is missing')
+const putTechnology = async (name, image) => {
+  if (!name || !image) throw Error('Data is missing')
 
-  const updatedTechnology = updateTechnology(id, name, image)
+  const updatedTechnology = updateTechnology(name, image)
 
   return updatedTechnology
 }
