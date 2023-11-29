@@ -4,9 +4,9 @@ const findProjects = async () => {
   return await Project.findAll({
     include: {
       model: Technology,
-      attributes: ['name'],
+      attributes: ['name', 'image'],
       through: {
-        attributes: ['images']
+        attributes: []
       }
     }
   })
