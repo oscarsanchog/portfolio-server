@@ -1,4 +1,4 @@
-const findProjects = require('../services/DBdata/find/findTechnologies')
+const findProjects = require('../services/DBdata/find/findProjects')
 
 const getProjects = async () => {
   const projects = findProjects()
