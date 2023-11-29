@@ -1,7 +1,7 @@
 const { Project, Technology } = require('../../../db')
 
 const findProjects = async () => {
-  return await Project.findAll(/* {
+  return await Project.findAll({
     include: {
       model: Technology,
       attributes: ['name'],
@@ -9,7 +9,7 @@ const findProjects = async () => {
         attributes: []
       }
     }
-  } */)
+  })
 }
 
 module.exports = findProjects
