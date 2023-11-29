@@ -6,7 +6,7 @@ const findProjects = async () => {
       model: Technology,
       attributes: ['name'],
       through: {
-        attributes: []
+        attributes: ['images']
       }
     }
   })
