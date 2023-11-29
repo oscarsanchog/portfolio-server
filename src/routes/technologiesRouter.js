@@ -8,6 +8,6 @@ const putTechnologyHandler = require('../handlers/putTechnologyHandler')
 technologiesRouter
   .get('/', getTechnologiesHandler)
   .post('/', postTechnologiesHandler)
-  .put('/:id', putTechnologyHandler)
+  .put('/:name', putTechnologyHandler)
 
 module.exports = technologiesRouter
